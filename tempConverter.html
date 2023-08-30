@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./tempConverter.css">
+    <title>Temperature Converter</title>
+</head>
+<body class="m-0 flex items-center justify-center min-h-screen font-mono">
+    <main class="p-5 rounded-lg w-[85%] max-w-[450px] min-w-[350px] flex flex-col justify-center items-center">
+        <h1 class="text-3xl">Temperature Converter</h1>
+        <div class="w-full font-bold p-4 text-lg">
+            <label for="celsius">Celsius:</label>
+            <input onchange="tempChange(event)" class="font-mono float-right w-[220px] p-1 rounded" type="number" name="celsius" id="celsius" placeholder="Enter temperature">
+        </div>
+        <div class="w-full font-bold p-4 text-lg">
+            <label for="kelvin">Kelvin:</label>
+            <input onchange="tempChange(event)" class="font-mono float-right w-[220px] p-1 rounded" type="number" name="kelvin" id="kelvin" placeholder="Enter temperature">
+        </div>
+        <div class="w-full font-bold p-4 text-lg">
+            <label for="fahrenheit">Fahrenheit:</label>
+            <input onchange="tempChange(event)" class="font-mono float-right w-[220px] p-1 rounded" type="number" name="farenheit" id="fahrenheit" placeholder="Enter temperature">
+        </div>
+    </main>
+</body>
+</html>
+<script src="./tempConverter.js"></script>

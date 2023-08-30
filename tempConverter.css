@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: linear-gradient(to left bottom, lightgreen, lightblue);
+    color: darkcyan;
+}
+main{
+    background-color: rgba(255, 255, 255, .3);
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+input{
+    outline: none;
+    background-color: rgba(255, 255, 255, .3);
+    color: darkgreen;
+    border-color: rgba(255, 255, 255, .5);
+    font-size:18px;
+}
+input::placeholder{
+    color:darkgray;
+}
